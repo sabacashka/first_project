@@ -1,0 +1,26 @@
+@import "library-blocks/normalize/normalize";
+@import "library-blocks/wrapper/wrapper";
+@import "library-blocks/container/container";
+
+._container{
+    @include container(1045px);
+}
+@import "library-blocks/backgrounds/backgrounds";
+@import "blocks/head/head";
+@import "library-blocks/menu/menu";
+@import "library-blocks/main/main";
+@import "blocks/main-block/main-block"; 
+@import "library-blocks/buttons/button";
+@import "blocks/properties/properties";
+@import "library-blocks/propertie/propertie.scss";
+@import "library-blocks/article/article-h.scss";
+@import "blocks/progress/progress";
+@import "blocks/main__back/main__back";
+@import "blocks/importants/importants";
+@import "blocks/presentation/presentation.scss";
+@import "blocks/partners/partners.scss";
+@import "library-blocks/form/form";
+@import "blocks/сontacts/сontacts";
+@import "blocks/offer/offer";
+@import "blocks/fmenu/fmenu";
+@import "blocks/autors/autors";

@@ -1,0 +1,119 @@
+.main-block {
+
+    background-image: url("/blocks/main-block/background.png");
+    background-size: contain;
+    background-position-x: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 767px) {
+
+        background-position-x: left;
+        background-size: cover;
+    }
+
+    .main-block__container {
+
+        padding-top: 184px;
+        padding-bottom: 192px;
+
+        @media (max-width: 1175px) {
+            padding-top: 134px;
+        }
+
+        @media (max-width: 1055px) {
+            padding-top: 114px;
+        }
+
+        @media (max-width: 860px) {
+            padding-top: 90px;
+        }
+
+        @media (max-width: 767px) {
+            padding-top: 90px;
+        }
+
+        @media (max-width: 500px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media (max-width: 350px) {
+            padding-top: 160px;
+        }
+
+        .main-block__article {
+            font-weight: 800;
+            font-size: 58px;
+            line-height: 80px;
+
+            letter-spacing: 0.2px;
+
+            max-width: 509px;
+            margin-bottom: 35px;
+
+            @media (max-width: 992px) {
+                font-size: 48px;
+                line-height: 60px;
+                margin-bottom: 25px;
+            }
+
+            @media (max-width: 860px) {
+                margin-bottom: 20px;
+            }
+
+
+            @media (max-width: 500px) {
+                font-size: 40px;
+                line-height: 40px;
+                margin-bottom: 20px;
+            }
+
+        }
+
+        .main-block__text {
+
+            max-width: 374px;
+
+            font-size: 20px;
+            line-height: 30px;
+
+            letter-spacing: 0.2px;
+
+            color: #737373;
+            margin-bottom: 35px;
+
+            @media (max-width: 992px) {
+                font-size: 18px;
+                line-height: 30px;
+            }
+
+            @media (max-width: 860px) {
+                margin-bottom: 20px;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 18px;
+                line-height: 25px;
+            }
+        }
+
+        .main-block__buttons {
+
+            min-width: 354px;
+            min-height: 48px;
+            display: flex;
+            flex-flow: row wrap;
+
+            @media (max-width: 500px) {
+
+                flex-flow: column nowrap;
+                align-items: center;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+
+        }
+
+    }
+}

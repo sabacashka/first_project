@@ -1,0 +1,88 @@
+.propertie {
+
+    max-height: 242px;
+    width: 328px;
+    background: #FFFFFF;
+
+    box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07);
+
+    transition: 0.4s;
+    padding: 35px 40px;
+
+
+
+    .propertie__svg {
+
+        width: 48px;
+        height: 48px;
+        margin-bottom: 10px;
+
+        .propertie__svg-line {
+            fill: #0D5C63;
+        }
+
+    }
+
+    .propertie__article {
+
+        color: #0D5C63;
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: 0.1px;
+
+    }
+
+    .propertie__text {
+
+        color: #0D5C63;
+        line-height: 20px;
+        max-height: 40px;
+
+        letter-spacing: 0.2px;
+
+        color: #737373;
+        text-align: justify;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        line-clamp: 2;
+        word-wrap: break-word;
+
+    }
+
+    @media (max-width: 1055px) {
+        min-width: 100%;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*Выбираем все последующие элементы от 4 и далее*/
+
+.propertie:nth-child(n+4) {
+    margin-top: 30px;
+
+    @media (max-width: 1055px) {
+        margin-top: 0;
+    }
+}
+
+.propertie:hover {
+
+    background: #0D5C63;
+    transition: 0.2s;
+
+    .propertie__svg-line {
+        fill: white;
+    }
+
+    .propertie__article {
+        color: white;
+    }
+
+    .propertie__text     {
+        color: white;
+    }
+
+}

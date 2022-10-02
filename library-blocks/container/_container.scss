@@ -1,0 +1,21 @@
+@mixin container ($width) {
+    max-width: $width;
+    margin: 0px auto;
+    /*-----Делаем отступы по краям, чтобы красиво было----*/
+
+    @media (max-width: 992px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 767px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    @media (max-width: 479px) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    /*----------------------------------------------------*/
+}

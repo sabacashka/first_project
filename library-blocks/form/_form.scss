@@ -1,0 +1,255 @@
+.form {
+    
+    @media (max-width: 889px) {
+        
+        min-height: 220px
+    }
+    @media (max-width: 560px) {
+        min-height: 280px
+    }
+    @media (max-width: 520px) {
+        min-height: 300px
+    }
+    @media (max-width: 464px) {
+        min-height: 330px;
+    }
+
+    .form__container {
+
+        min-height: 164px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+
+        .form__block {
+
+            display: flex;
+            justify-content: inherit;
+            align-items: inherit;
+            flex-flow: inherit;
+            
+            min-width: 986px;
+            min-height: 124px;
+            
+            background: #17213C;
+            border-radius: 2px;
+
+            @media (max-width: 1059px) {
+                min-width: calc(986px - 20%);
+            }
+            @media (max-width: 889px) {
+                min-width: calc(986px - 30%);
+            }
+            @media (max-width: 819px) {
+                min-width: calc(986px - 40%);
+            }
+            @media (max-width: 759px) {
+                min-width: 0;
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            @media (max-width: 560px) {
+                border-radius: 10px 10px 10px 10px;
+            }
+            .form__lining {
+
+                display: flex;
+                flex-flow: inherit;
+                align-items: inherit;
+                justify-content: inherit;
+                
+                min-width: 896px;
+                min-height: 64px;
+
+                @media (max-width: 1059px) {
+                    min-width: calc(896px - 20%);
+                }
+                @media (max-width: 889px) {
+                    min-width: calc(896px - 30%);
+                    padding-left: 100px;
+                    padding-right: 100px;
+                }
+                @media (max-width: 819px) {
+                    min-width: calc(896px - 40%);
+                    padding-left: auto;
+                    padding-right: auto;
+                }
+                @media (max-width: 759px) {
+                    min-width: 0;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+
+                .form__form {
+
+                    display: flex;
+                    flex-flow: inherit;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 100%;
+                    height: 100%;
+
+                    @media (max-width: 889px) {
+                        justify-content: center;
+                        padding-top: 30px;
+                        padding-bottom: 30px;
+                    }
+                    .form__article {
+                        
+                        width: 266px;
+                        height: 64px;
+
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 32px;
+                        
+                        letter-spacing: 0.1px;
+
+                        color: #FFFFFF;
+
+                        @media (max-width: 889px) {
+                            width: 450px;
+                            text-align: center;
+                        }
+                    }
+
+                    .form__mail-button-block {
+
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: space-between;
+
+                        width: 450px;
+                        height: 58px;
+
+                        @media (max-width: 560px) {
+                            height: 130px;
+                            flex-direction: column;
+                        }
+                        @media (max-width: 544px) {
+                            height: 150px;
+                            justify-content: flex-end;
+                        }
+                        @media (max-width: 363px) {
+                            height: 190px;
+                        }
+
+                        .form__mail {
+
+                            width: 333px;
+                            height: 58px;
+                            background: #F9F9F9;
+                            border: solid #E6E6E6;
+                            border-width: 1px 0px 1px 1px;
+                            border-radius: 5px 0px 0px 5px;
+                            outline: none;
+
+                          
+                            font-weight: 400;
+                            line-height: 28px;
+                            
+                            letter-spacing: 0.2px;
+
+                            color: #737373;
+                            padding-left: 20px;
+
+                            @media (max-width: 560px) {
+                                width: 400px;
+                                height: 65px;
+                                border-width: 1px 1px 1px 1px;
+                                border-radius: 10px 10px 0px 0px;
+                            }
+                            @media (max-width: 519px) {
+                                width: 350px;
+                            }
+                            @media (max-width: 464px) {
+                                width: 300px;
+                            }
+                            @media (max-width: 403px) {
+                                width: 250px;
+                            }
+                            @media (max-width: 363px) {
+                                width: 200px;
+                            }
+                            @media (max-width: 289px) {
+                                width: 150px;
+                            }
+                        }
+
+                        .form__mail:focus {
+
+                            border: solid #FF7B47;
+                            border-width: 2px 0px 2px 2px;
+                            padding-left: 19px;
+
+                            @media (max-width: 560px) {
+                                border-width: 2px 2px 0px 2px;
+                            }
+
+                        }
+
+                        .form__mail:invalid {
+
+                            border: solid #ff0000;
+                            border-width: 2px 0px 2px 2px;
+                            padding-left: 19px;
+
+                            @media (max-width: 560px) {
+                                border-width: 2px 2px 0px 2px;
+                            }
+
+                        }
+                        
+                        .form__button-submit {
+
+                            width: 117px;
+                            height: 58px;
+
+                            background: #FF7B47;
+                            border-radius: 0px 5px 5px 0px;
+                            border: 1px solid #FF7B47;
+                            
+                            font-weight: 400;
+                            font-size: 16px;
+                            letter-spacing: 0.2px;
+                            color: #FFFFFF;
+                            transition: 0.5s;
+                            cursor: pointer;
+
+                            @media (max-width: 560px) {
+                                width: 400px;
+                                height: 65px;
+                                border-width: 1px 1px 1px 1px;
+                                border-radius: 0px 0px 10px 10px;
+                            }
+                            @media (max-width: 519px) {
+                                width: 350px;
+                            }
+                            @media (max-width: 464px) {
+                                width: 300px;
+                            }
+                            @media (max-width: 403px) {
+                                width: 250px;
+                            }
+                            @media (max-width: 363px) {
+                                width: 200px;
+                            }
+                            @media (max-width: 289px) {
+                                width: 150px;
+                            }
+                        }
+                        
+                        .form__button-submit:hover {
+
+                            border: 1px solid #E6E6E6;
+                            font-size: 14px;
+                            transition: 0.2s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

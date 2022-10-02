@@ -1,0 +1,66 @@
+.article-h {
+
+    min-height: 107px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    /*
+    margin-top: -80px;
+    где-то это уже прописано в проекте. Отступ такой же.
+    */
+}
+.article-h__h2 {
+
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+
+    @media (max-width: 659px) {
+        font-size: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media (max-width: 499px) {
+        font-size: 26px;
+    }
+    @media (max-width: 420px) {
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+}
+
+.article-h__text {
+
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    max-width: 511px;
+    color: #737373;
+
+    @media (max-width: 659px) {
+        font-size: 14px;
+    }
+    @media (max-width: 530px) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    @media (max-width: 499px) {
+        font-size: 14px;
+    }
+}
+._out80 {
+    margin-top: 80px;
+}
+._out100 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+._out80-80 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 0px;
+}

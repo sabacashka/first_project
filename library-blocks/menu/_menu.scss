@@ -1,0 +1,30 @@
+.menu {
+
+    .menu__container {
+        display: flex;
+        flex-flow: wrap;
+
+        .menu__item {
+
+            .menu__link {
+                color: #737373;
+                line-height: 171%;
+                font-weight: 600;
+                transition: 0.4s;
+
+                @media (max-width: 479px) {
+                   font-size: 18px;
+                }
+            }
+            .menu__link:hover {
+                color: #FF7B47;
+                transition: 0.2s;
+            }
+        }
+
+        .menu__item:not(:last-child) {
+            margin: 0px 21px 0px 0px;
+        }
+    }
+
+}

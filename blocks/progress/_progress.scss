@@ -1,0 +1,82 @@
+.progress {
+
+    padding-bottom: 80px;
+    
+    .progress__container {
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+
+        .progress__item {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 240px;
+            height: 209px;
+            padding: 30px 40px;
+
+            @media (max-width: 994px) {
+                width: 50%;
+            }
+            @media (max-width: 376px) {
+                width: 100%;
+            }
+            
+            .progress__image {
+
+                    max-width: 48px;
+                    max-height: 48px;
+
+                @media (max-width: 499px) {
+                    max-width: 40px;
+                    max-height: 40px;
+                }
+
+            }
+
+            .progress__h2 {
+
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 57px;
+                letter-spacing: 0.2px;
+
+                @media (max-width: 499px) {
+                    font-size: 24px;
+                }
+
+            }
+
+            .progress__text {
+
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                letter-spacing: 0.1px;
+
+                color: #737373;
+                white-space: nowrap;
+
+                @media (max-width: 499px) {
+                    font-size: 14px;
+                }
+
+            }
+
+            .progress__image, .progress__h2, .progress__text:not(:last-child) {
+                margin-bottom: 10px;
+            }
+
+        }
+
+        .progress__item:nth-child(n+5) {
+            margin-top: 30px;
+        }
+
+    }
+}

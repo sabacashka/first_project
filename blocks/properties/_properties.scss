@@ -1,0 +1,32 @@
+.main__properties {
+
+    .main__properties__container {
+
+        min-height: 242px;
+        margin-top: -112px;
+        margin-bottom: 80px;
+
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-content: space-between;
+
+        @media (max-width: 1316px) {
+
+            margin-top: -160px;
+
+        }
+
+        @media (max-width: 1055px) {
+            flex-flow: column nowrap;
+            align-items: center;
+            margin-top: -140px;
+        }
+
+        @media (max-width: 500px) {
+            margin-top: -160px;
+        }
+
+    }
+
+}

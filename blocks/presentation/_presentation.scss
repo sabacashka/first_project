@@ -1,0 +1,156 @@
+.presentation {
+    
+    .presentation__container {
+
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-bottom: 136px;
+
+        @media (max-width: 1089px) {
+            padding-left: 120px;
+            padding-right: 120px;
+            justify-content: center;
+        }
+        @media (max-width: 826px) {
+        
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @media (max-width: 680px) {
+        
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+        @media (max-width: 470px) {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .presentation__video-container {
+
+            width: 600px;
+            height: 442px;
+
+            @media (max-width: 1089px) {
+                width: 100%;
+            }
+            @media (max-width: 704px) {
+                height: 350px;
+            }
+            @media (max-width: 520px) {
+                height: 300px;
+            }
+            @media (max-width: 388px) {
+                height: 200px;
+            }
+
+            .presentation__video {
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .presentation__content {
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            width: 395px;
+            height: 442px;
+
+            @media (max-width: 1089px) {
+                width: 100%;
+            }
+
+            .presentation__article {
+
+                .presentation__h3 {
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: 0.1px;
+
+                    @media (max-width: 659px) {
+                        font-size: 23px;
+                    }
+                }
+
+                .presentation__text {
+                    line-height: 20px;
+                    color: #737373;
+                }
+
+                .presentation__h3, .presentation__text:not(:last-child) {
+                    margin-bottom: 15px;
+                }
+
+            }
+            .presentation__item {
+
+                width: 100%;
+                min-height: 53px;
+
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+
+                .presentation__logo-container {
+
+                    min-width: 32px;
+                    min-height: 32px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+
+                    .presentation__logo {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                .presentation__lining {
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+
+                    .presentation__lining-h {
+
+                        font-weight: 700;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+
+                        @media (max-width: 659px) {
+                            font-size: 15px;
+                        }
+
+                    }
+                    .presentation__lining-p {
+
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                        color: #737373;
+
+                    }
+                }
+                .presentation__logo-container, .presentation__lining:not(:last-child) {
+                    margin-right: 20px; 
+
+                }
+
+            }
+            .presentation__article, .presentation__item:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+        .presentation__video-container, .presentation__content:not(:last-child) {
+        
+            @media (max-width: 1089px) {
+                padding-bottom: 45px;
+            }
+        }
+    }
+}
